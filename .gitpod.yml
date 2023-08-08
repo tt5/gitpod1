@@ -2,4 +2,6 @@ image:
     file: .gitpod.Dockerfile
 tasks:
     - command: |
-          echo "done"
+          sudo civo apikey save gitpod1 $CIVO_API_KEY
+          sudo civo region set FRA1
+
