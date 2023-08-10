@@ -1,0 +1,1 @@
+sudo cp /home/linuxbrew/.linuxbrew/Cellar/ncurses/6.4/share/terminfo/a/alacritty /usr/share/terminfo/a/alacritty

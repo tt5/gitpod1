@@ -4,4 +4,6 @@ tasks:
     - command: |
           sudo civo apikey save gitpod1 $CIVO_API_KEY
           sudo civo region set FRA1
+          chmod +x civostart.sh
+          chmod +x civoremove.sh
 

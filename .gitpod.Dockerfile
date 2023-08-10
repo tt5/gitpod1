@@ -13,6 +13,10 @@ RUN wget https://github.com/triggermesh/tmctl/releases/download/v1.4.0/tmctl_lin
     chmod +x tmctl && \
     sudo mv ./tmctl /usr/local/bin/
 
+RUN curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 && \
+    chmod 700 get_helm.sh && \
+    ./get_helm.sh
+
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.27.4/bin/linux/amd64/kubectl && \
     chmod +x ./kubectl && \
     sudo mv ./kubectl /usr/local/bin/kubectl && \
