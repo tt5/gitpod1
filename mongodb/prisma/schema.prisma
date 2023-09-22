@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = "mongodb://user:password@localhost:27018/one?authSource=admin"
 }
 
 model User {

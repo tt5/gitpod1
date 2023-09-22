@@ -1,6 +1,7 @@
 sudo cp /home/linuxbrew/.linuxbrew/Cellar/ncurses/6.4/share/terminfo/a/alacritty /usr/share/terminfo/a/alacritty
 docker exec -it redpanda-0 rpk cluster info
 tmctl create broker b
+tmctl watch
 docker inspect redpanda-0
 docker exec -it redpanda-0 rpk topic create chat -p 3
 curl -s "localhost:18082/topics"
